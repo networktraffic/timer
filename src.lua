@@ -1,8 +1,8 @@
 local timer = { } do
     timer.__index = timer
 	
-    function timer.new( )
-        return setmetatable( { currTime = 0, finishedTime = 0 }, timer )
+	function timer.new( )
+	    return setmetatable( { currTime = 0, finishedTime = 0 }, timer )
     end
 	
 	function timer:start( )
