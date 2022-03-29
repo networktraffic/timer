@@ -26,6 +26,23 @@ local timer = { } do
             self:start( )
         end
     end
+	
+	function timer:reset( )
+		if self.currTime ~= 0 or self.finishedTime ~= 0 then
+			self.currTime = 0
+			self.finishedTime = 0
+		end
+	end
+	
+	function timer:wrap( func )
+		self:reset( )
+		self:start( )
+        
+		func( )
+        
+		self:stop( )
+		return self.finishedTime
+	end
 end
 
 return timer
