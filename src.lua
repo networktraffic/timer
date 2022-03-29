@@ -28,10 +28,10 @@ local timer = { } do
     end
 	
     function timer:reset( )
-	if self.currTime ~= 0 or self.finishedTime ~= 0 then
-	    self.currTime = 0
-            self.finishedTime = 0
-	end
+	 if self.currTime ~= 0 or self.finishedTime ~= 0 then
+	     self.currTime = 0
+             self.finishedTime = 0
+	 end
     end
 	
     function timer:wrap( func )
