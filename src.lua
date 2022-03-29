@@ -35,13 +35,13 @@ local timer = { } do
     end
 	
     function timer:wrap( func )
-    	self:reset( )
-	self:start( )
+    	 self:reset( )
+	 self:start( )
         
-	func( )
+	 func( )
         
-	self:stop( )
-	return self.finishedTime
+	 self:stop( )
+	 return self.finishedTime
      end
 end
 
