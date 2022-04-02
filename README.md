@@ -12,17 +12,17 @@ timer:restart( )
 # exploit environment usage
 ```lua
 local timer = loadstring( game:HttpGetAsync( 'https://raw.githubusercontent.com/networktraffic/timer/main/src.lua' ) )( )
-local exampleTimer = timer.new( )
+local example_timer = timer.new( )
 
-exampleTimer:start( )
+example_timer:start( )
 task.wait( 3 )
-exampleTimer:stop( )
+example_timer:stop( )
 
-print( exampleTimer.finishedTime )
+print( example_timer.finishedTime )
 
-exampleTimer:restart( )
+example_timer:restart( )
 task.wait( 2 )
-exampleTimer:stop( )
+example_timer:stop( )
 
-print( exampleTimer.finishedTime )
+print( example_timer.finishedTime )
 ```
