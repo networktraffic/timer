@@ -7,6 +7,8 @@ b) if you want to use this for exploit environment development, just simply make
 timer:start( )
 timer:stop( )
 timer:restart( )
+timer:reset( )
+timer:wrap( <function> func )
 ```
 
 # exploit environment usage
@@ -25,4 +27,7 @@ task.wait( 2 )
 example_timer:stop( )
 
 print( example_timer.finishedTime )
+print( example_timer:wrap( function( )
+    warn( 'hello from an example wrap' )
+end ) )
 ```
