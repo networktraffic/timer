@@ -14,20 +14,20 @@ timer:wrap( <function> func )
 # exploit environment usage
 ```lua
 local timer = loadstring( game:HttpGetAsync( 'https://raw.githubusercontent.com/networktraffic/timer/main/src.lua' ) )( )
-local example_timer = timer.new( )
+local exampleTimer = timer.new( )
 
-example_timer:start( )
+exampleTimer:start( )
 task.wait( 3 )
-example_timer:stop( )
+exampleTimer:stop( )
 
-print( example_timer.finishedTime )
+print( exampleTimer.finishedTime )
 
-example_timer:restart( )
+exampleTimer:restart( )
 task.wait( 2 )
-example_timer:stop( )
+exampleTimer:stop( )
 
-print( example_timer.finishedTime )
-print( example_timer:wrap( function( )
+print( exampleTimer.finishedTime )
+print( exampleTimer:wrap( function( )
     warn( 'hello from an example wrap' )
 end ) )
 ```
