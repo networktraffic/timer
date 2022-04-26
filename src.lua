@@ -15,7 +15,7 @@ local timer = { } do
     
     function timer:stop( )
         if self.curr_time ~= 0 then 
-            self.finished_time = os.clock( ) - self.currTime
+            self.finished_time = os.clock( ) - self.curr_time
             self.curr_time = 0
         end
     end
