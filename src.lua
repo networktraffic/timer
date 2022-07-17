@@ -31,11 +31,11 @@ function timer:reset( )
     if self.curr_time ~= 0 or self.finished_time ~= 0 then
         self.curr_time = 0
         self.finished_time = 0
-	end
+    end
 end
 	
 function timer:measure_speed( func )
-    self:reset( )
+        self:reset( )
 	self:start( )
 
 	func( )
