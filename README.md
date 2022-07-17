@@ -8,7 +8,7 @@ timer:start( )
 timer:stop( )
 timer:restart( )
 timer:reset( )
-timer:wrap( <function> func )
+timer:measure_speed( <function> func )
 ```
 
 # exploit environment usage
@@ -27,7 +27,7 @@ task.wait( 2 )
 example_timer:stop( )
 
 print( example_timer.finished_time )
-print( example_timer:wrap( function( )
+print( example_timer:measure_speed( function( )
     warn( 'hello from an example wrap' )
 end ) )
 ```
