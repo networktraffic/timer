@@ -14,7 +14,7 @@ function timer:start( )
 end
 
 function timer:stop( )
-    if self.curr_time ~= 0 then 
+    if self.curr_time ~= 0 then
         self.finished_time = os.clock( ) - self.curr_time
         self.curr_time = 0
     end
@@ -28,20 +28,20 @@ function timer:restart( )
 end
 
 function timer:reset( )
-	if self.curr_time ~= 0 or self.finished_time ~= 0 then
-		self.curr_time = 0
-		self.finished_time = 0
-	end
+    if self.curr_time ~= 0 or self.finished_time ~= 0 then
+        self.curr_time = 0
+        self.finished_time = 0
+    end
 end
-	
-function timer:measure_speed( func )
-	self:reset( )
-	self:start( )
 
-	func( )
-  
-	self:stop( )
-	return self.finished_time
+function timer:measure_speed( func )
+    self:reset( )
+    self:start( )
+
+    func( )
+
+    self:stop( )
+    return self.finished_time
 end
 
 return timer
