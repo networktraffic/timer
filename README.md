@@ -4,10 +4,10 @@ a) to use this in studio, you could create a `ModuleScript` and put the `src.lua
 b) if you want to use this for exploit environment development, just simply make an http request to the raw `src.lua` contents file or paste it within the script and use from there
 
 ```lua
-timer:start( )
-timer:stop( )
-timer:restart( )
-timer:reset( )
+timer:start( <void> )
+timer:stop( <void> )
+timer:restart( <void> )
+timer:reset( <void> )
 timer:measure_speed( <function> func )
 ```
 
