@@ -35,13 +35,13 @@ function timer:reset( )
 end
 	
 function timer:measure_speed( func )
-        self:reset( )
-	self:start( )
+     self:reset( )
+     self:start( )
 
-	func( )
+     func( )
   
-	self:stop( )
-	return self.finished_time
+     self:stop( )
+     return self.finished_time
 end
 
 return timer
